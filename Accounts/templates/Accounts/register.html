@@ -4,7 +4,7 @@
 {% block title %}Register{% endblock title %}
 
 {% block body %}
-<div class="container mt-3">
+<div class="container mt-3" style="background-color: springgreen;">
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         
@@ -13,8 +13,8 @@
             {{ form | crispy }}
         </fieldset>
         <div class="form-group pt-2">
-            <button class="btn btn-outline-info" type="submit">Sign Up</button>
-            <button class="btn btn-outline-info" type="reset">Reset</button>
+            <button class="btn btn-outline-info" type="submit" style="background-color: black;" >Sign Up</button>
+            <button class="btn btn-outline-info" type="reset" style="background-color: black;"  >Reset</button>
         </div>
     </form>
     <div class="border-top mt-2 pb-2">

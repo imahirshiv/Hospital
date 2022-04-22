@@ -4,15 +4,15 @@
 {% block title %}Login{% endblock title %}
 
 {% block body %}
-<div class="container mt-3">
-    <form method="POST">
+<div class="container mt-3" style="background-color: lightgreen;" >
+    <form method="POST" >
         {% csrf_token %}
         <fieldset class="form-group">
             <legend class="border-bottom mb-4 text-center"><h3>Log In</h3></legend>
             {{ form | crispy }}                                 
         </fieldset>
         <div class="form-group mt-2">
-            <button class="btn btn-outline-info" type="submit">Login</button>
+            <button class="btn btn-outline-info" type="submit" style="color: white; background-color: rgb(15, 15, 15);" >Login</button>
             <small class="text-muted ml-2">
                 <a href="{% url 'password_reset' %}">Forgot Password?</a>
             </small>
