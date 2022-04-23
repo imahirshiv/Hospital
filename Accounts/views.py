@@ -39,10 +39,3 @@ def profile(request):
     }
 
     return render(request, template_name='Accounts/profile.html', context=context)
-
-
-
-
-
-# admin  admin@1234
-# user1  admin@1234
