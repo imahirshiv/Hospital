@@ -8,7 +8,7 @@
 
 <div class="container mt-3">
 
-    <div class="content-section">
+    <div class="content-section" style="background-color: lightcyan; border-radius: 5%; " >
         <div class="media mt-3" style="display: flex;">
             <div class="media-body" style="padding-block-start: 20px; padding-left: 17px;">
                 <h2 class="account-heading">{{ user.username }}</h2>
@@ -18,7 +18,7 @@
     </div>
 
     <!-- FORM HERE -->
-    <form method="POST" enctype="multipart/form-data">
+    <form method="POST" enctype="multipart/form-data" style="background-color: lightcyan; border-radius: 5%;" >
         {% csrf_token %}
         <fieldset class="form-group mb-2">
             <legend class="border-bottom mb-3 text-center">
