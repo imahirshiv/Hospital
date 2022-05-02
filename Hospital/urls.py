@@ -8,6 +8,8 @@ urlpatterns = [
     path('', include('Home.urls')),
     path('accounts/', include('Accounts.urls')),
     path('patient/', include('patient.urls')), 
+    path('doctor/', include('doctor.urls')),
+    path('services/', include('services.urls')),
 ]
 
 # path('accounts/', include('Accounts.urls')),
