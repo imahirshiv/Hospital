@@ -4,7 +4,6 @@ from django import forms
 
 class UserRegisterForm(UserCreationForm):
     email = forms.EmailField()
-    # image = forms.ImageField(required=False)
 
     class Meta:
         model = User
